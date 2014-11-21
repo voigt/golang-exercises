@@ -6,6 +6,8 @@ import "fmt"
 
 var wow = "Multiple Functions have Access to this variable!"
 
+const konstante = 42
+
 func main() {
 	var x string = "Hello World"
 	var y string
@@ -20,8 +22,20 @@ func main() {
 	fmt.Println(z)
 
 	printWoW()
+	fahrenheitToCelsius(13)
+	fettToMeters(13)
 }
 
 func printWoW() {
 	fmt.Println(wow)
+}
+
+func fahrenheitToCelsius(value float64) {
+	value = ((value - 32) * 5 / 9)
+	fmt.Println(value)
+}
+
+func fettToMeters(value float64) {
+	value = (value * 0.3048)
+	fmt.Println(value)
 }
