@@ -1,0 +1,18 @@
+{
+	"folders":
+	[
+		{
+			"path": "gobook"
+		}
+	],
+	"settings":
+	{
+		"GoSublime":
+		{
+			"env":
+			{
+				"GOPATH": "/home/cvo/github/golang-exercises"
+			}
+		}
+	}
+}
